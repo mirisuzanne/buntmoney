@@ -1,0 +1,597 @@
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+main {
+  display: block; }
+
+details {
+  display: block; }
+
+pre {
+  overflow: auto; }
+
+progress {
+  display: inline-block; }
+
+summary {
+  display: block; }
+
+template {
+  display: none; }
+
+*,
+::before,
+::after {
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box; }
+
+* {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+audio :not([controls]) {
+  display: none; }
+
+[aria-busy='true'] {
+  cursor: progress; }
+
+[aria-controls] {
+  cursor: pointer; }
+
+[aria-disabled] {
+  cursor: default; }
+
+[hidden] {
+  display: none; }
+
+button {
+  overflow: visible; }
+
+input {
+  border-radius: 0;
+  line-height: normal; }
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  cursor: pointer; }
+  button::-moz-focus-inner,
+  [type='button']::-moz-focus-inner,
+  [type='reset']::-moz-focus-inner,
+  [type='submit']::-moz-focus-inner {
+    border: 0 none !important;
+    padding: 0 !important; }
+
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type='number'] {
+  width: auto; }
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield; }
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+textarea {
+  overflow: auto;
+  resize: vertical; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  max-width: 100%;
+  vertical-align: middle; }
+
+a {
+  background-color: transparent; }
+  a:active, a:hover {
+    outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace;
+  font-size: inherit; }
+
+dfn {
+  font-style: italic; }
+
+nav ol,
+nav ul {
+  list-style: none; }
+
+small {
+  font-size: 0.75em; }
+
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/sourcesanspro/sourcesanspro-regular-webfont.woff2") format("woff2"), url("fonts/sourcesanspro/sourcesanspro-regular-webfont.woff") format("woff"), url("fonts/sourcesanspro/sourcesanspro-regular-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: italic;
+  font-weight: normal;
+  src: url("fonts/sourcesanspro/sourcesanspro-italic-webfont.woff2") format("woff2"), url("fonts/sourcesanspro/sourcesanspro-italic-webfont.woff") format("woff"), url("fonts/sourcesanspro/sourcesanspro-italic-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/sourcesanspro/sourcesanspro-bold-webfont.woff2") format("woff2"), url("fonts/sourcesanspro/sourcesanspro-bold-webfont.woff") format("woff"), url("fonts/sourcesanspro/sourcesanspro-bold-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.woff2") format("woff2"), url("fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.woff") format("woff"), url("fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.ttf") format("truetype"); }
+
+:root {
+  background-color: #eff;
+  color: #111;
+  font-family: "SourceSansPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-size: calc(110% + 0.5vw);
+  line-height: 1.375; }
+
+h1 {
+  font-size: 1.61111rem;
+  font-size: calc(110% + 2vw); }
+
+a:link, a:visited {
+  color: #007a27; }
+
+a:hover, a:focus, a:active {
+  text-decoration: none; }
+
+html {
+  -ms-flex-align: center;
+  align-items: center;
+  background: url("images/camp.jpg") no-repeat fixed center;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  padding: 0.69444rem;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+body {
+  background-color: rgba(238, 255, 255, 0.85);
+  color: #111;
+  border-radius: 0.69444rem;
+  box-shadow: 0 0 1.38889rem rgba(238, 255, 255, 0.85), 0 0 1.38889rem rgba(238, 255, 255, 0.85);
+  max-width: 30rem;
+  padding: 0.69444rem;
+  width: 100%; }
+  body:after {
+    clear: both;
+    content: ' ';
+    display: block; }
+  @media (min-width: 25em) {
+    body {
+      padding: 1.38889rem; } }
+
+header {
+  margin-bottom: 1.38889rem;
+  text-align: center; }
+
+@media (min-width: 25em) {
+  aside {
+    float: left;
+    margin-right: 2.08333rem; } }
+
+main {
+  overflow: hidden; }
+
+.graph {
+  background: #111;
+  height: 12rem;
+  margin-bottom: 0.69444rem;
+  position: relative; }
+
+.show-me {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  background: #007a27; }
+
+[data-percent='1'] {
+  height: 1%; }
+
+[data-percent='2'] {
+  height: 2%; }
+
+[data-percent='3'] {
+  height: 3%; }
+
+[data-percent='4'] {
+  height: 4%; }
+
+[data-percent='5'] {
+  height: 5%; }
+
+[data-percent='6'] {
+  height: 6%; }
+
+[data-percent='7'] {
+  height: 7%; }
+
+[data-percent='8'] {
+  height: 8%; }
+
+[data-percent='9'] {
+  height: 9%; }
+
+[data-percent='10'] {
+  height: 10%; }
+
+[data-percent='11'] {
+  height: 11%; }
+
+[data-percent='12'] {
+  height: 12%; }
+
+[data-percent='13'] {
+  height: 13%; }
+
+[data-percent='14'] {
+  height: 14%; }
+
+[data-percent='15'] {
+  height: 15%; }
+
+[data-percent='16'] {
+  height: 16%; }
+
+[data-percent='17'] {
+  height: 17%; }
+
+[data-percent='18'] {
+  height: 18%; }
+
+[data-percent='19'] {
+  height: 19%; }
+
+[data-percent='20'] {
+  height: 20%; }
+
+[data-percent='21'] {
+  height: 21%; }
+
+[data-percent='22'] {
+  height: 22%; }
+
+[data-percent='23'] {
+  height: 23%; }
+
+[data-percent='24'] {
+  height: 24%; }
+
+[data-percent='25'] {
+  height: 25%; }
+
+[data-percent='26'] {
+  height: 26%; }
+
+[data-percent='27'] {
+  height: 27%; }
+
+[data-percent='28'] {
+  height: 28%; }
+
+[data-percent='29'] {
+  height: 29%; }
+
+[data-percent='30'] {
+  height: 30%; }
+
+[data-percent='31'] {
+  height: 31%; }
+
+[data-percent='32'] {
+  height: 32%; }
+
+[data-percent='33'] {
+  height: 33%; }
+
+[data-percent='34'] {
+  height: 34%; }
+
+[data-percent='35'] {
+  height: 35%; }
+
+[data-percent='36'] {
+  height: 36%; }
+
+[data-percent='37'] {
+  height: 37%; }
+
+[data-percent='38'] {
+  height: 38%; }
+
+[data-percent='39'] {
+  height: 39%; }
+
+[data-percent='40'] {
+  height: 40%; }
+
+[data-percent='41'] {
+  height: 41%; }
+
+[data-percent='42'] {
+  height: 42%; }
+
+[data-percent='43'] {
+  height: 43%; }
+
+[data-percent='44'] {
+  height: 44%; }
+
+[data-percent='45'] {
+  height: 45%; }
+
+[data-percent='46'] {
+  height: 46%; }
+
+[data-percent='47'] {
+  height: 47%; }
+
+[data-percent='48'] {
+  height: 48%; }
+
+[data-percent='49'] {
+  height: 49%; }
+
+[data-percent='50'] {
+  height: 50%; }
+
+[data-percent='51'] {
+  height: 51%; }
+
+[data-percent='52'] {
+  height: 52%; }
+
+[data-percent='53'] {
+  height: 53%; }
+
+[data-percent='54'] {
+  height: 54%; }
+
+[data-percent='55'] {
+  height: 55%; }
+
+[data-percent='56'] {
+  height: 56%; }
+
+[data-percent='57'] {
+  height: 57%; }
+
+[data-percent='58'] {
+  height: 58%; }
+
+[data-percent='59'] {
+  height: 59%; }
+
+[data-percent='60'] {
+  height: 60%; }
+
+[data-percent='61'] {
+  height: 61%; }
+
+[data-percent='62'] {
+  height: 62%; }
+
+[data-percent='63'] {
+  height: 63%; }
+
+[data-percent='64'] {
+  height: 64%; }
+
+[data-percent='65'] {
+  height: 65%; }
+
+[data-percent='66'] {
+  height: 66%; }
+
+[data-percent='67'] {
+  height: 67%; }
+
+[data-percent='68'] {
+  height: 68%; }
+
+[data-percent='69'] {
+  height: 69%; }
+
+[data-percent='70'] {
+  height: 70%; }
+
+[data-percent='71'] {
+  height: 71%; }
+
+[data-percent='72'] {
+  height: 72%; }
+
+[data-percent='73'] {
+  height: 73%; }
+
+[data-percent='74'] {
+  height: 74%; }
+
+[data-percent='75'] {
+  height: 75%; }
+
+[data-percent='76'] {
+  height: 76%; }
+
+[data-percent='77'] {
+  height: 77%; }
+
+[data-percent='78'] {
+  height: 78%; }
+
+[data-percent='79'] {
+  height: 79%; }
+
+[data-percent='80'] {
+  height: 80%; }
+
+[data-percent='81'] {
+  height: 81%; }
+
+[data-percent='82'] {
+  height: 82%; }
+
+[data-percent='83'] {
+  height: 83%; }
+
+[data-percent='84'] {
+  height: 84%; }
+
+[data-percent='85'] {
+  height: 85%; }
+
+[data-percent='86'] {
+  height: 86%; }
+
+[data-percent='87'] {
+  height: 87%; }
+
+[data-percent='88'] {
+  height: 88%; }
+
+[data-percent='89'] {
+  height: 89%; }
+
+[data-percent='90'] {
+  height: 90%; }
+
+[data-percent='91'] {
+  height: 91%; }
+
+[data-percent='92'] {
+  height: 92%; }
+
+[data-percent='93'] {
+  height: 93%; }
+
+[data-percent='94'] {
+  height: 94%; }
+
+[data-percent='95'] {
+  height: 95%; }
+
+[data-percent='96'] {
+  height: 96%; }
+
+[data-percent='97'] {
+  height: 97%; }
+
+[data-percent='98'] {
+  height: 98%; }
+
+[data-percent='99'] {
+  height: 99%; }
+
+[data-percent='100'] {
+  height: 100%; }
+
+sup {
+  font-size: 0.72222rem;
+  line-height: 1.38889rem;
+  color: #007a27;
+  font-weight: normal; }
+
+.money {
+  text-align: center; }
+
+.current,
+.goal {
+  font-size: 1.61111rem;
+  line-height: 2.08333rem;
+  display: block;
+  font-weight: bold; }
+
+.whatever {
+  font-size: 0.72222rem;
+  line-height: 1.38889rem; }
+
+p {
+  margin-bottom: 1.38889rem; }
+
+button {
+  background-color: #007a27;
+  color: #eff;
+  padding: 0.69444rem 1.38889rem;
+  text-align: center;
+  width: 100%; }
+  button b,
+  button strong {
+    display: block; }
+  button b {
+    text-transform: uppercase; }
+  button strong {
+    font-size: 1.61111rem;
+    line-height: 2.08333rem;
+    text-transform: capitalize; }
+
+/*# sourceMappingURL=style.css.map */

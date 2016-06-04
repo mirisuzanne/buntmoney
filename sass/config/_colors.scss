@@ -1,0 +1,23 @@
+// Color Settings
+// ==============
+
+@import '../../node_modules/accoutrement-color/sass/color';
+@import '../../node_modules/mathsass/dist/math';
+
+
+$colors: (
+  'contrast-dark': #111,
+  'contrast-light': #eff,
+  'brand': hsl(139, 100%, 24%),
+
+  'background': 'contrast-light',
+  'text': 'contrast-dark',
+
+  'overlay': 'background' ('rgba': 0.85),
+  'fade': 'text' ('rgba': 0.5),
+
+  'action': 'brand',
+  'focus': 'action' ('shade': 15%),
+
+  'border': 'text-light',
+);

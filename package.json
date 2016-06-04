@@ -1,0 +1,36 @@
+{
+  "name": "buntmoney",
+  "version": "1.0.0",
+  "description": "donate to buntport",
+  "main": "index.html",
+  "dependencies": {
+    "accoutrement-color": "2.0.1",
+    "accoutrement-init": "1.1.0",
+    "accoutrement-layout": "2.1.0",
+    "accoutrement-scale": "2.0.0",
+    "accoutrement-type": "2.0.0",
+    "autoprefixer": "6.3.6",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-sass": "2.3.1",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-util": "3.0.7",
+    "mathsass": "0.9.5",
+    "node-sass": "3.7.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mirisuzanne/buntmoney.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "author": "Miriam Suzanne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mirisuzanne/buntmoney/issues"
+  },
+  "homepage": "https://github.com/mirisuzanne/buntmoney"
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate to Buntport Theater</title>
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Donate to Buntport</h1>
+    <h2>help us raise money for our 16th season!</h2>
+  </header>
+
+  <aside>
+    <div class="graph">
+      <!-- HEY BUNTPORT: update this "data-percent" number -->
+      <span class="show-me" data-percent="45"></span>
+    </div>
+    <div class="money">
+      <span class="current">
+        <!-- HEY BUNTPORT: update this number with the dollar amount -->
+        <sup>$</sup>000
+      </span>
+      <span class="whatever">
+        out of
+      </span>
+      <span class="goal">
+        <sup>$</sup>10,000
+      </span>
+    </div>
+  </aside>
+
+  <main>
+    <p>
+      Thanks to a generous grant from the
+      <a href="">Olson-Vander Heyden Foundation</a>,
+      donations made to Buntport
+      between now and the end of July
+      will be&nbsp;matched.
+    </p>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="POST" enctype="x-www-form-urlencoded" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <button src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" type="submit" name="submit">
+        <b>Give now</b>
+        <span class="whatever">and</span>
+        <strong>double your donation!</strong>
+      </button>
+    </form>
+  </main>
+</body>
+</html>

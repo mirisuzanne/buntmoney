@@ -1,0 +1,31 @@
+// Font Settings
+// =============
+
+@import '../../node_modules/accoutrement-type/sass/type';
+
+
+// Links
+// -----
+
+$link: '&:link, &:visited';
+$focus: '&:hover, &:focus, &:active';
+
+
+// Fonts
+// -----
+
+$font-formats: 'woff2' 'woff' 'ttf';
+$font-path: 'fonts/';
+
+$body-font: (
+  'name': 'SourceSansPro',
+  'stack': ('Helvetica Neue', Helvetica, Arial, sans-serif),
+  'regular': 'sourcesanspro/sourcesanspro-regular-webfont',
+  'italic': 'sourcesanspro/sourcesanspro-italic-webfont',
+  'bold': 'sourcesanspro/sourcesanspro-bold-webfont',
+  'bold' 'italic': 'sourcesanspro/sourcesanspro-bolditalic-webfont',
+);
+
+$fonts: (
+  'body': $body-font,
+);

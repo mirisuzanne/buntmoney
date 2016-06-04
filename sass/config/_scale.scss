@@ -1,0 +1,22 @@
+// Scale Settings
+// ==============
+
+@import '../../node_modules/accoutrement-scale/sass/scale';
+
+
+$ratios: (
+  'buntpress': 1.375,
+);
+
+$sizes: (
+  'root': 18px,
+  'rhythm': 'root' ('buntpress': 1),
+
+  'large': 'root' ('buntpress': 1.5),
+  'small': 'root' ('buntpress': -1),
+
+  'gutter': 'rhythm',
+  'page': 30rem,
+
+  'shim': 'gutter' ('multiple': 0.5),
+);
