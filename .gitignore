@@ -1,2 +1,6 @@
 node_modules
 source
+README.md
+package.json
+gulpfile.js
+sass/
