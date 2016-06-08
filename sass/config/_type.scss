@@ -17,25 +17,15 @@ $focus: '&:hover, &:focus, &:active';
 $font-formats: 'woff2' 'woff' 'ttf';
 $font-path: 'fonts/';
 
-$sans-font: (
-  'name': 'SourceSansPro',
-  'stack': ('Helvetica Neue', Helvetica, Arial, sans-serif),
-  'regular': 'sourcesanspro/sourcesanspro-regular-webfont',
-  'italic': 'sourcesanspro/sourcesanspro-italic-webfont',
-  'bold': 'sourcesanspro/sourcesanspro-bold-webfont',
-  'bold' 'italic': 'sourcesanspro/sourcesanspro-bolditalic-webfont',
-);
-
 $serif-font: (
   'name': 'BaskervilleFS',
   'stack': (Baskerville, Palatino, Cambria, Georgia, serif),
-  'regular': 'serif/baskerville-regular-webfont',
-  'italic': 'serif/baskerville-italic-webfont',
-  'bold': 'serif/baskerville-bold-webfont',
-  'bold' 'italic': 'serif/baskerville-bolditalic-webfont',
+  'regular': 'baskerville-regular-webfont',
+  'italic': 'baskerville-italic-webfont',
+  'bold': 'baskerville-bold-webfont',
+  'bold' 'italic': 'baskerville-bolditalic-webfont',
 );
 
 $fonts: (
-  'boiler': $sans-font,
   'body': $serif-font,
 );

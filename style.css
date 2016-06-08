@@ -161,52 +161,28 @@ sub {
   bottom: -0.25em; }
 
 @font-face {
-  font-family: "SourceSansPro";
-  font-style: normal;
-  font-weight: normal;
-  src: url("fonts/sourcesanspro/sourcesanspro-regular-webfont.woff2") format("woff2"), url("fonts/sourcesanspro/sourcesanspro-regular-webfont.woff") format("woff"), url("fonts/sourcesanspro/sourcesanspro-regular-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "SourceSansPro";
-  font-style: italic;
-  font-weight: normal;
-  src: url("fonts/sourcesanspro/sourcesanspro-italic-webfont.woff2") format("woff2"), url("fonts/sourcesanspro/sourcesanspro-italic-webfont.woff") format("woff"), url("fonts/sourcesanspro/sourcesanspro-italic-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "SourceSansPro";
-  font-style: normal;
-  font-weight: bold;
-  src: url("fonts/sourcesanspro/sourcesanspro-bold-webfont.woff2") format("woff2"), url("fonts/sourcesanspro/sourcesanspro-bold-webfont.woff") format("woff"), url("fonts/sourcesanspro/sourcesanspro-bold-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "SourceSansPro";
-  font-style: italic;
-  font-weight: bold;
-  src: url("fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.woff2") format("woff2"), url("fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.woff") format("woff"), url("fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.ttf") format("truetype"); }
-
-@font-face {
   font-family: "BaskervilleFS";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/serif/baskerville-regular-webfont.woff2") format("woff2"), url("fonts/serif/baskerville-regular-webfont.woff") format("woff"), url("fonts/serif/baskerville-regular-webfont.ttf") format("truetype"); }
+  src: url("fonts/baskerville-regular-webfont.woff2") format("woff2"), url("fonts/baskerville-regular-webfont.woff") format("woff"), url("fonts/baskerville-regular-webfont.ttf") format("truetype"); }
 
 @font-face {
   font-family: "BaskervilleFS";
   font-style: italic;
   font-weight: normal;
-  src: url("fonts/serif/baskerville-italic-webfont.woff2") format("woff2"), url("fonts/serif/baskerville-italic-webfont.woff") format("woff"), url("fonts/serif/baskerville-italic-webfont.ttf") format("truetype"); }
+  src: url("fonts/baskerville-italic-webfont.woff2") format("woff2"), url("fonts/baskerville-italic-webfont.woff") format("woff"), url("fonts/baskerville-italic-webfont.ttf") format("truetype"); }
 
 @font-face {
   font-family: "BaskervilleFS";
   font-style: normal;
   font-weight: bold;
-  src: url("fonts/serif/baskerville-bold-webfont.woff2") format("woff2"), url("fonts/serif/baskerville-bold-webfont.woff") format("woff"), url("fonts/serif/baskerville-bold-webfont.ttf") format("truetype"); }
+  src: url("fonts/baskerville-bold-webfont.woff2") format("woff2"), url("fonts/baskerville-bold-webfont.woff") format("woff"), url("fonts/baskerville-bold-webfont.ttf") format("truetype"); }
 
 @font-face {
   font-family: "BaskervilleFS";
   font-style: italic;
   font-weight: bold;
-  src: url("fonts/serif/baskerville-bolditalic-webfont.woff2") format("woff2"), url("fonts/serif/baskerville-bolditalic-webfont.woff") format("woff"), url("fonts/serif/baskerville-bolditalic-webfont.ttf") format("truetype"); }
+  src: url("fonts/baskerville-bolditalic-webfont.woff2") format("woff2"), url("fonts/baskerville-bolditalic-webfont.woff") format("woff"), url("fonts/baskerville-bolditalic-webfont.ttf") format("truetype"); }
 
 :root {
   background-color: #111;
