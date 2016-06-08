@@ -184,76 +184,119 @@ sub {
   font-weight: bold;
   src: url("fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.woff2") format("woff2"), url("fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.woff") format("woff"), url("fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "BaskervilleFS";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/serif/baskerville-regular-webfont.woff2") format("woff2"), url("fonts/serif/baskerville-regular-webfont.woff") format("woff"), url("fonts/serif/baskerville-regular-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BaskervilleFS";
+  font-style: italic;
+  font-weight: normal;
+  src: url("fonts/serif/baskerville-italic-webfont.woff2") format("woff2"), url("fonts/serif/baskerville-italic-webfont.woff") format("woff"), url("fonts/serif/baskerville-italic-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BaskervilleFS";
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/serif/baskerville-bold-webfont.woff2") format("woff2"), url("fonts/serif/baskerville-bold-webfont.woff") format("woff"), url("fonts/serif/baskerville-bold-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BaskervilleFS";
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/serif/baskerville-bolditalic-webfont.woff2") format("woff2"), url("fonts/serif/baskerville-bolditalic-webfont.woff") format("woff"), url("fonts/serif/baskerville-bolditalic-webfont.ttf") format("truetype"); }
+
 :root {
-  background-color: #eff;
-  color: #111;
-  font-family: "SourceSansPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #111;
+  color: #eee;
+  font-family: "BaskervilleFS", Baskerville, Palatino, Cambria, Georgia, serif;
   font-size: 1rem;
   font-size: calc(110% + 0.5vw);
   line-height: 1.375; }
 
 h1 {
   font-size: 1.61111rem;
-  font-size: calc(110% + 2vw); }
+  font-size: calc(100% + 2vw); }
 
 a:link, a:visited {
-  color: #007a27; }
+  color: #7a0052; }
 
 a:hover, a:focus, a:active {
   text-decoration: none; }
 
 html {
   -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
-  background: url("images/camp.jpg") no-repeat fixed center;
+  border: 10vmin solid gold;
+  border-image: url("images/frame.png") 185 226 round;
+  background: url("images/canvas.jpg") no-repeat fixed center;
   background-size: cover;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100%;
-  padding: 0.69444rem;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+  @media (min-width: 33.75em) {
+    html {
+      border-width: 15vmin; } }
 
 body {
-  background-color: rgba(238, 255, 255, 0.85);
-  color: #111;
-  border-radius: 0.69444rem;
-  box-shadow: 0 0 1.38889rem rgba(238, 255, 255, 0.85), 0 0 1.38889rem rgba(238, 255, 255, 0.85);
-  max-width: 30rem;
-  padding: 0.69444rem;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 100%; }
   body:after {
     clear: both;
     content: ' ';
     display: block; }
-  @media (min-width: 25em) {
-    body {
-      padding: 1.38889rem; } }
 
-header {
-  margin-bottom: 1.38889rem;
-  text-align: center; }
+aside {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 0.34722rem #111 inset;
+  background-image: repeating-linear-gradient(45deg, rgba(17, 17, 17, 0.75) 0, rgba(17, 17, 17, 0.75) 4px, #7a0052 4px, #7a0052 6px);
+  width: 24vmin; }
 
-@media (min-width: 25em) {
-  aside {
-    float: left;
-    margin-right: 2.08333rem; } }
-
+header,
 main {
-  overflow: hidden; }
+  margin-left: 24vmin;
+  padding: 0.69444rem 5vmin; }
 
-.graph {
-  background: #111;
-  height: 12rem;
-  margin-bottom: 0.69444rem;
-  position: relative; }
+.money {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.34722rem;
+  text-align: center; }
+  .money .current,
+  .money .whatever,
+  .money .goal {
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.75) 75%, transparent 75%);
+    display: inline-block;
+    text-shadow: 0 0 0.34722rem #111; }
+  .money .current,
+  .money .goal {
+    font-weight: bold; }
+    .money .current:before,
+    .money .goal:before {
+      content: "$"; }
+  .money .whatever {
+    font-size: 0.72222rem;
+    line-height: 1.38889rem;
+    font-style: italic; }
 
-.show-me {
+[data-percent] {
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
-  background: #007a27; }
+  background: url("images/paint.jpg") no-repeat scroll;
+  background-size: cover;
+  box-shadow: 0 0 0.34722rem #111 inset; }
 
 [data-percent='1'] {
   height: 1%; }
@@ -555,43 +598,34 @@ main {
 [data-percent='100'] {
   height: 100%; }
 
-sup {
-  font-size: 0.72222rem;
-  line-height: 1.38889rem;
-  color: #007a27;
-  font-weight: normal; }
-
-.money {
-  text-align: center; }
-
-.current,
-.goal {
-  font-size: 1.61111rem;
-  line-height: 2.08333rem;
-  display: block;
-  font-weight: bold; }
-
-.whatever {
-  font-size: 0.72222rem;
-  line-height: 1.38889rem; }
-
 p {
   margin-bottom: 1.38889rem; }
 
 button {
-  background-color: #007a27;
-  color: #eff;
+  background-color: #7a0052;
+  color: #eee;
+  border: 2px solid #eee;
+  border-radius: 0.34722rem;
   padding: 0.69444rem 1.38889rem;
   text-align: center;
+  transition: all 150ms;
   width: 100%; }
+  button:hover, button:focus, button:active {
+    background-color: #680045;
+    box-shadow: 0 0 0.69444rem #eee; }
   button b,
-  button strong {
-    display: block; }
-  button b {
-    text-transform: uppercase; }
-  button strong {
-    font-size: 1.61111rem;
-    line-height: 2.08333rem;
+  button strong,
+  button .whatever {
+    display: block;
     text-transform: capitalize; }
+
+small {
+  font-size: 0.72222rem;
+  line-height: 1.04167rem;
+  display: block;
+  font-style: italic;
+  margin-top: 1.38889rem;
+  padding: 0.69444rem;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

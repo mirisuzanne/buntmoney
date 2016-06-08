@@ -7,14 +7,14 @@
 
 $colors: (
   'contrast-dark': #111,
-  'contrast-light': #eff,
-  'brand': hsl(139, 100%, 24%),
+  'contrast-light': #eee,
+  'brand': hsl(320, 100%, 24%),
 
-  'background': 'contrast-light',
-  'text': 'contrast-dark',
+  'background': 'contrast-dark',
+  'text': 'contrast-light',
 
-  'overlay': 'background' ('rgba': 0.85),
-  'fade': 'text' ('rgba': 0.5),
+  'overlay': 'background' ('rgba': 0.75),
+  'red': 'brand',
 
   'action': 'brand',
   'focus': 'action' ('shade': 15%),
